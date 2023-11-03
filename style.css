@@ -5,6 +5,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #8a2be2; /* Cor de fundo lilás em toda a tela */
     color: #ffffff; /* Cor da fonte branca */
+    display: flex;
+    justify-content: center;
 }
 
 .login-container {
@@ -162,6 +164,9 @@ body {
     display: flex;
     flex-direction:row;
     align-items: center;
+    justify-content: center;
+   
+   
 }
 
 .button-column button {
@@ -172,9 +177,83 @@ body {
     cursor: pointer; /* Mostrar o cursor de mão ao passar por cima do botão */
     font-size: 16px; /* Tamanho da fonte do botão */
     margin-bottom: 10px; /* Espaçamento inferior entre os botões */
-    transition: ;
-}
+    margin-right: 1px;
+    align-items: center;
+   
+   
+   
+ }
 
 .button-column button:hover {
     background-color: #45a049; /* Cor de fundo do botão (verde mais escuro) ao passar o mouse */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    transition: all 0.5s ease-in-out;
+}
+
+
+.lança-horas-container h3{
+    display: flex;
+    justify-content:left;
+    align-items:flex-end;
+    padding: 1rem;
+    margin: 0;
+}
+
+.form-campos-relatorio1{
+    display: flex;
+    justify-content: left;
+    padding: 12px;
+    }
+
+.form-campos-relatorio2{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.publicadores-selecionados{
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+    margin-top:10%;
+    padding: 0;
+    
+}
+
+.publicadores-selecionados label{
+    flex-direction: column;
+    width: 300px;
+    height: inherit;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+
+}
+
+.form-campos-relatorio1 label{
+    flex-direction: column ;
+    display: flex;
+    justify-content: left;
+}
+
+.form-campos-relatorio2 label{
+    flex-direction: column;
+    display: flex;
+    justify-content:left;
+    text-align: left;
+
+    
+}
+
+main{
+    flex:1;
+    padding: 20px;
+}
+
+aside{
+    border:solid #45a049;
+    border-radius: 4px;
+    margin-right: 10px;
 }

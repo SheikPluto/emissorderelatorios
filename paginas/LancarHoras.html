@@ -8,14 +8,14 @@
     <title>Lançar</title>
 </head>
 <body>
-    
+  <main>     
 <div id="main-page" class="main-container">
     <div class="date-time"> <!-- Adicione a classe .date-time aqui -->
         <span id="current-date">Data: </span>
         <span id="current-time">Hora: </span>
     </div>
     <!-- Tela Inicial -->
-
+    
 <div class="button-column">
     <a href="/paginas/inicio.html"><button id="inicio">Inicio</button></a>
     <a href=""><button id="novo-publicador">Novo Publicador</button></a>
@@ -23,6 +23,50 @@
     <a href=""><button id="disparo">Disparo</button></a>
     <a href=""><button id="dashboard">Dashboard</button></a>
     <a href=""><button id="assistência">Assistência</button></a>
+</div>
+
+<div class="lança-horas-container">
+<h3>Insira os dados do relatorio:</h3>
+<form class="form-campos-relatorio1">
+    <label for="participou">
+        Participo no Minitério:
+    </label>
+    <input type="text" id="participou" name="participou" required>
+    <label for="Grupo">
+        Selecione o Grupo:
+    </label>
+    <input type="text" id="grupo" name="grupo" required>
+
+</form>
+
+    <form class="form-campos-relatorio2">
+        <label for="status">
+            Selecione o Status:
+        </label>
+        <input type="text" id="status" name="status" required>
+        <label for="nome">
+            Nome do Publicador:
+        </label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="horas">
+            Horas do Publicador:
+        </label>
+        <input type="text" id="horas" name="horas" required>
+
+        <label for="estudo">
+            Estudo:
+        </label>
+        <input type="text" id="estudo" name="estudo" required>
+     
+    </form>
+</main> 
+    <aside class="publicadores-selecionados">
+        <label for="publicadores">
+            Selecione o Publicador:
+        </label>
+        <input type="text" id="publicadores" name="publicadores" required>
+    </aside>
+
 </div>
 </body>
 </html>
