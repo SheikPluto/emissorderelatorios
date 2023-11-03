@@ -1,0 +1,180 @@
+/* Estilos para a tela de login */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #8a2be2; /* Cor de fundo lilás em toda a tela */
+    color: #ffffff; /* Cor da fonte branca */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura igual à altura da viewport */
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+.login-container form {
+    padding: 20px; /* Espaçamento interno */
+}
+
+.login-container label {
+    display: block; /* Para que cada rótulo fique em uma linha separada */
+    margin-bottom: 10px; /* Margem inferior entre rótulos */
+    font-size: 16px; /* Fonte menor */
+}
+
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%; /* Preencher a largura do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Margem inferior */
+    border: 1px solid #ffffff; /* Borda branca */
+    background-color: transparent; /* Fundo transparente */
+    color: #ffffff; /* Cor da fonte branca */
+    font-size: 14px; /* Fonte menor */
+}
+
+.login-container input[type="checkbox"] {
+    margin-right: 5px; /* Margem à direita para alinhar com o texto */
+    font-size: 14px; /* Fonte menor */
+}
+
+.login-container a {
+    color: #ffffff; /* Cor do link branca */
+    text-decoration: none; /* Remover sublinhado */
+    font-size: 14px; /* Fonte menor */
+}
+
+.login-container button {
+    background-color: #4caf50; /* Cor de fundo do botão (verde) */
+    color: #ffffff; /* Cor do texto do botão (branco) */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remover a borda do botão */
+    cursor: pointer; /* Mostrar o cursor de mão ao passar por cima do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.login-container button:hover {
+    background-color: #45a049; /* Cor de fundo do botão (verde mais escuro) ao passar o mouse */
+}
+
+.social-login-buttons button {
+    margin-right: 10px; /* Espaçamento entre botões de login social */
+    font-size: 16px; /* Fonte menor */
+}
+
+/* Estilos para a tela de cadastro */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #8a2be2; /* Cor de fundo lilás em toda a tela */
+    color: #ffffff; /* Cor da fonte branca */
+}
+
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura igual à altura da viewport */
+    text-align: center;
+}
+
+.registration-container h2 {
+    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+.registration-container form {
+    padding: 20px; /* Espaçamento interno */
+}
+
+.registration-container label {
+    display: block; /* Para que cada rótulo fique em uma linha separada */
+    margin-bottom: 10px; /* Margem inferior entre rótulos */
+    font-size: 16px; /* Fonte menor */
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="password"] {
+    width: 100%; /* Preencher a largura do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Margem inferior */
+    border: 1px solid #ffffff; /* Borda branca */
+    background-color: transparent; /* Fundo transparente */
+    color: #ffffff; /* Cor da fonte branca */
+    font-size: 14px; /* Fonte menor */
+}
+
+.registration-container button {
+    background-color: #4caf50; /* Cor de fundo do botão (verde) */
+    color: #ffffff; /* Cor do texto do botão (branco) */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remover a borda do botão */
+    cursor: pointer; /* Mostrar o cursor de mão ao passar por cima do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.registration-container button:hover {
+    background-color: #45a049; /* Cor de fundo do botão (verde mais escuro) ao passar o mouse */
+}
+
+/* Estilos para a tela inicial */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #8a2be2; /* Cor de fundo lilás em toda a tela */
+    color: #ffffff; /* Cor da fonte branca */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Altura igual à altura da viewport */
+    text-align: center;
+    padding-top: 20px; /* Espaçamento superior para a data e hora */
+}
+
+/* Estilos para a data e hora */
+.date-time {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo com transparência */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 18px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos para os botões em colunas */
+.button-column {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.button-column button {
+    background-color: #4caf50; /* Cor de fundo do botão (verde) */
+    color: #ffffff; /* Cor do texto do botão (branco) */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remover a borda do botão */
+    cursor: pointer; /* Mostrar o cursor de mão ao passar por cima do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    margin-bottom: 10px; /* Espaçamento inferior entre os botões */
+    transition: ;
+}
+
+.button-column button:hover {
+    background-color: #45a049; /* Cor de fundo do botão (verde mais escuro) ao passar o mouse */
+}
