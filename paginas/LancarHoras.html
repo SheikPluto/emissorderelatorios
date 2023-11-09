@@ -1,72 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="/app.js" defer ></script>
+    <script src="/app.js" defer></script>
     <title>Lançar</title>
 </head>
+
 <body>
-  <main>     
-<div id="main-page" class="main-container">
-    <div class="date-time"> <!-- Adicione a classe .date-time aqui -->
-        <span id="current-date">Data: </span>
-        <span id="current-time">Hora: </span>
-    </div>
-    <!-- Tela Inicial -->
+    <main>
+        <div id="main-page" class="main-container">
+            <div class="date-time"> <!-- Adicione a classe .date-time aqui -->
+                <span id="current-date">Data: </span>
+                <span id="current-time">Hora: </span>
+            </div>
+            <!-- Tela Inicial -->
+
+            <div class="button-column">
+                <a href="/paginas/inicio.html"><button id="inicio">Inicio</button></a>
+                <a href=""><button id="novo-publicador">Novo Publicador</button></a>
+                <a href=""><button id="extrair">Extrair</button></a>
+                <a href=""><button id="disparo">Disparo</button></a>
+                <a href=""><button id="dashboard">Dashboard</button></a>
+                <a href=""><button id="assistência">Assistência</button></a>
+            </div>
+
+            <div class="lança-horas-container">
+                <h3>Insira os dados do relatorio:</h3>
+                <form class="form-campos-relatorio1">
+                    <label for="participou">
+                        Participo no Minitério:
+                    </label>
+                    <div class="input-options-ministerio">
+                        <select id="options-ministerio">
+                            <option value="" disabled selected>Selecione uma Opção</option>
+                            <option value="Opção1">Sim</option>
+                            <option value="Opção2">Não</option>
+                        </select>                                  
+                    </div>
+                    <label for="Grupo">
+                        Selecione o Grupo:
+                    </label>
+
+                    <div class="input-options-grupo">
+                        <select id="options-grupo">
+                            <option value="" disabled selected>Selecione uma Opção</option>
+                            <option value="Opção1">-</option>
+                            <option value="Opção2">1</option>
+                            <option value="Opção3">2</option>
+                            <option value="Opção4">3</option>
+                            <option value="Opção5">4</option>
+                            <option value="Opção6">5</option>
+                            <option value="Opção7">Todos</option>                            
+                        </select>    
+                    </div>
+                </form>
+
+                <form class="form-campos-relatorio2">
+                    <label for="status">
+                        Selecione o Status:
+                    </label>
+                    <div class="input-options-status">
+                        <select id="options-status">
+                            <option value="" disabled selected>Selecione uma Opção</option>
+                            <option value="Opção1">-</option>
+                            <option value="Opção2">Pioneiro Regular</option>
+                            <option value="Opção3">Pioneiro Auxiliar</option>
+                            <option value="Opção4">Publicador</option>                  
+                        </select>    
+                    </div>
+                    
+                    
+                    <label for="nome">
+                        Nome do Publicador:
+                    </label>
+                    <div class="input-options-nome">
+                        <select id="options-nome">
+                            <option value="" disabled selected>Selecione uma Opção</option>
+                            <option value="Opção1">-</option>
+                            <option value="Opção2">""</option>
+             
+                        </select>    
+                    </div>
+                    <label for="horas">
+                        Horas do Publicador:
+                    </label>
+                    <div class="input-options-horas">
+                        <select id="options-horas">
+                            <option value="" disabled selected>Selecione uma Opção</option>
+                            <option value="Opção1">-</option>
+                            <option value="Opção2">""</option>
+             
+                        </select>    
+                    </div>
+
+                    <label for="estudo">
+                        Estudo:
+                    </label>
+                    <div class="input-options-estudo">
+                        <select id="options-estudo">
+                            <option value="" disabled selected>Selecione uma Opção</option>
+                            <option value="Opção1">-</option>
+                            <option value="Opção2">""</option>             
+                        </select>    
+                    </div>
+
+                </form>
+    </main>
+   
+        <aside class="publicadores-selecionados">
+            <label for="publicadores">
+                Selecione o Publicador:
+            </label>
+             <select id="myComboBox-publicador-selecionado">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
     
-<div class="button-column">
-    <a href="/paginas/inicio.html"><button id="inicio">Inicio</button></a>
-    <a href=""><button id="novo-publicador">Novo Publicador</button></a>
-    <a href=""><button id="extrair">Extrair</button></a>
-    <a href=""><button id="disparo">Disparo</button></a>
-    <a href=""><button id="dashboard">Dashboard</button></a>
-    <a href=""><button id="assistência">Assistência</button></a>
-</div>
-
-<div class="lança-horas-container">
-<h3>Insira os dados do relatorio:</h3>
-<form class="form-campos-relatorio1">
-    <label for="participou">
-        Participo no Minitério:
-    </label>
-    <input type="text" id="participou" name="participou" required>
-    <label for="Grupo">
-        Selecione o Grupo:
-    </label>
-    <input type="text" id="grupo" name="grupo" required>
-
-</form>
-
-    <form class="form-campos-relatorio2">
-        <label for="status">
-            Selecione o Status:
-        </label>
-        <input type="text" id="status" name="status" required>
-        <label for="nome">
-            Nome do Publicador:
-        </label>
-        <input type="text" id="nome" name="nome" required>
-        <label for="horas">
-            Horas do Publicador:
-        </label>
-        <input type="text" id="horas" name="horas" required>
-
-        <label for="estudo">
-            Estudo:
-        </label>
-        <input type="text" id="estudo" name="estudo" required>
-     
-    </form>
-</main> 
-    <aside class="publicadores-selecionados">
-        <label for="publicadores">
-            Selecione o Publicador:
-        </label>
-        <input type="text" id="publicadores" name="publicadores" required>
-    </aside>
-
-</div>
+            </select>
+        </aside>
+   
+    </div>
 </body>
+
 </html>
